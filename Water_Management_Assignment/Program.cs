@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Water_Management_Assignment
 {
-    internal class Program
+    public class Program
     {
         int consumptionPerPerson;
         double unitCost;
@@ -15,6 +17,8 @@ namespace Water_Management_Assignment
         int corporationWater;
         int borewellWater;
         int guest = 0;
+
+
 
         public double allotWater(int apartmentType, int corporationWater, int borewellWater)
         {
@@ -27,9 +31,13 @@ namespace Water_Management_Assignment
                 consumptionPerPerson = 1500;
             }
 
+
+
             unitCost = consumptionPerPerson / (corporationWater + borewellWater);
             return unitCost;
         }
+
+
 
         public int addGuest(int addGuest)
         {
@@ -38,9 +46,13 @@ namespace Water_Management_Assignment
             return waterConsumedByGuest;
         }
 
+
+
         public string getBill()
         {
             int guestBill = 0;
+
+
 
             if (waterConsumedByGuest > 0 && waterConsumedByGuest <= 500)
             {
